@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Artium — Ad Astra per Artium</title>
+
+    <meta
+        name="description"
+        content="Artium — a new creative platform for artists, writers, creators, patrons, partners and investors."
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            padding: 32px 20px;
+
+            background-color: #0b0c10;
+            color: #ffffff;
+
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            text-align: center;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .banner {
+            display: block;
+
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+
+            margin: 0 auto 30px;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 10px 35px rgba(0, 0, 0, 0.45);
+        }
+
+        .content {
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+
+        .tagline {
+            margin: 0 0 28px;
+
+            color: #c5c6c7;
+
+            font-size: 1.05rem;
+            line-height: 1.65;
+        }
+
+        form {
+            padding: 30px;
+
+            background-color: #1f2833;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 8px 30px rgba(0, 0, 0, 0.45);
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+
+            padding: 13px 14px;
+            margin-bottom: 15px;
+
+            border-radius: 6px;
+
+            font: inherit;
+        }
+
+        input,
+        textarea {
+            border: 1px solid #45f3ff;
+
+            background-color: #0b0c10;
+            color: #ffffff;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #9fa6ad;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid #66fcf1;
+            outline-offset: 2px;
+        }
+
+        button {
+            margin-bottom: 0;
+
+            border: none;
+
+            background-color: #66fcf1;
+            color: #0b0c10;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition:
+                background-color 0.25s ease,
+                transform 0.15s ease;
+        }
+
+        button:hover {
+            background-color: #45e3db;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        footer {
+            margin-top: 22px;
+
+            color: #777f87;
+
+            font-size: 0.85rem;
+        }
+
+        .sr-only {
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+
+            padding: 0;
+            margin: -1px;
+
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+
+            white-space: nowrap;
+
+            border: 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 14px;
+            }
+
+            .banner {
+                margin-bottom: 24px;
+                border-radius: 8px;
+            }
+
+            form {
+                padding: 24px 20px;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <h1 class="sr-only">
+            Artium — Ad Astra per Artium
+        </h1>
+
+        <img
+            src="artium-banner.jpg"
+            alt="Artium — Ad Astra per Artium"
+            class="banner"
+        >
+
+        <div class="content">
+
+            <p class="tagline">
+                Something new is taking shape.<br>
+                Patrons, partners, creators and investors are welcome to connect.
+            </p>
+
+            <form
+                action="https://formspree.io/f/xyeglbrl"
+                method="POST"
+            >
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    autocomplete="name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                    autocomplete="email"
+                    required
+                >
+
+                <textarea
+                    name="message"
+                    placeholder="Your message"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Connect with Artium
+                </button>
+
+            </form>
+
+            <footer>
+                © 2026 Artium
+            </footer>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
